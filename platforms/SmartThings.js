@@ -18,7 +18,7 @@ SmartThingsPlatform.prototype = {
     var foundAccessories = [];
 
     request.get({
-      url: "https://graph.api.smartthings.com/api/smartapps/installations/"+this.app_id+"/devices?access_token="+this.access_token,
+      url: "https://graph-eu01-euwest1.smartthings.com/api/smartapps/installations/"+this.app_id+"/devices?access_token="+this.access_token,
       json: true
     }, function(err, response, json) {
       if (!err && response.statusCode == 200) {
